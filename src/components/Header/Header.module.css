@@ -42,6 +42,7 @@
     background-color: var(--secondary);
     padding: 2em;
     max-width: 22%;
+    /* margin-bottom: 1em; */
 }
 
 .subscriptionForm p {
