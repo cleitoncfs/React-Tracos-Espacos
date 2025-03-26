@@ -10,7 +10,7 @@ export default function WhatsAppButton() {
                 title="Contate-nos também pelo Whatsapp"
             >
                 <img
-                    src="/src/assets/images/whatsapp-logo-128x128_resized.png"
+                    src="/assets/images/whatsapp-logo-128x128_resized.png"
                     alt="Whatsapp da Traços & Espaços - Estúdio e Design de Interiores"
                 />
             </a>

@@ -28,7 +28,7 @@ export default function Benefits() {
                         <div
                             className={styles.benefitImg}
                             style={{
-                                backgroundImage: `url(/src/assets/images/${benefit.image})`,
+                                backgroundImage: `url(/assets/images/${benefit.image})`,
                             }}
                         ></div>
                         <p>{benefit.text}</p>

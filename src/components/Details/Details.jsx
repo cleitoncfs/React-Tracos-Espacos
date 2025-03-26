@@ -48,7 +48,7 @@ export default function Details() {
                     }`}
                 >
                     <img
-                        src={`/src/assets/images/${detail.image}`}
+                        src={`/assets/images/${detail.image}`}
                         alt={detail.title}
                     />
                     <div className={styles.detailDescription}>
