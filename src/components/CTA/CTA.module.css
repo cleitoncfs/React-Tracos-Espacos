@@ -1,0 +1,96 @@
+/* Seção Parallax */
+.cta {
+    height: 300px;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+        url("@/assets/images/hrz-6.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--text-color); /* Pode ser substituído por uma cor fixa */
+}
+
+/* Estilo do Título */
+.cta h3 {
+    margin-bottom: 1.2em;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+/* Botão */
+.cta .btn {
+    width: 30%;
+    font-weight: 600;
+    font-size: 1.2em;
+    background-color: #00baf2; /* Cor do fundo */
+    color: #fff; /* Cor do texto */
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+    margin: 0 auto;
+}
+
+/* Efeito no Hover do Botão */
+.cta .btn:hover {
+    opacity: 0.9;
+}
+
+/* Mobile: Telas menores (até 450px) */
+@media (max-width: 450px) {
+    .cta {
+        height: auto;
+        padding: 2em;
+    }
+
+    .cta h3 {
+        font-size: 1.5em;
+    }
+
+    .cta .btn {
+        width: 80%;
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
+
+/* Tablets: Telas entre 451px e 1024px */
+@media (min-width: 451px) and (max-width: 1024px) {
+    .cta {
+        height: auto;
+        padding: 3em;
+    }
+
+    .cta h3 {
+        font-size: 1.8em;
+    }
+
+    .cta .btn {
+        width: 50%;
+        font-size: 1.1em;
+        padding: 9px 18px;
+    }
+}
+
+/* Telas grandes (Smart TVs e superiores a 1920px) */
+@media (min-width: 1920px) {
+    .cta {
+        height: 400px;
+        justify-content: space-around;
+    }
+
+    .cta h3 {
+        font-size: 2.5em;
+    }
+
+    .cta .btn {
+        width: 25%;
+        font-size: 1.5em;
+        padding: 12px 24px;
+    }
+}

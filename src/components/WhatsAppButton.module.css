@@ -1,0 +1,56 @@
+.whatsappIcon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsappIcon img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.whatsappIcon img:hover {
+    transform: scale(1.1);
+}
+
+/* Mobile: Telas menores (até 450px) */
+@media (max-width: 450px) {
+    .whatsappIcon {
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsappIcon img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Tablets: Telas entre 451px e 1024px */
+@media (min-width: 451px) and (max-width: 1024px) {
+    .whatsappIcon {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .whatsappIcon img {
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* Telas grandes (Smart TVs e superiores a 1920px) */
+@media (min-width: 1920px) {
+    .whatsappIcon {
+        bottom: 25px;
+        right: 25px;
+    }
+
+    .whatsappIcon img {
+        width: 60px;
+        height: 60px;
+    }
+}

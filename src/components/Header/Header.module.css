@@ -1,0 +1,141 @@
+.eventSubscription {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)),
+        url("../../assets/images/hrz-5.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 85vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.disclaimer h2,
+.disclaimer .eventDate {
+    color: var(--primary);
+}
+
+.disclaimer h2 {
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+
+.disclaimer .aboutEvent {
+    font-size: 2em;
+    text-transform: uppercase;
+    max-width: 350px;
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.disclaimer p {
+    font-size: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.disclaimer .eventDate {
+    font-weight: bold;
+}
+
+.subscriptionForm {
+    background-color: var(--secondary);
+    padding: 2em;
+    max-width: 22%;
+}
+
+.subscriptionForm p {
+    font-size: 1.5em;
+    color: var(--text-secondary);
+    margin-bottom: 1em;
+}
+
+.formGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0.8em;
+}
+
+.formGroup label {
+    color: var(--text-tertiary);
+    margin-bottom: 0.3em;
+    font-weight: bold;
+}
+
+.formGroup input,
+.formGroup select {
+    padding: 6px 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Mobile: Telas menores (até 450px) */
+@media (max-width: 450px) {
+    .eventSubscription {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    .disclaimer {
+        padding: 2em;
+    }
+
+    .disclaimer h2 {
+        margin-bottom: 0.5em;
+    }
+
+    .subscriptionForm {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 1.5em;
+    }
+
+    .btn {
+        width: 100%;
+        font-size: 1em;
+        background-color: var(--primary);
+        color: var(--text-color);
+    }
+}
+
+/* Tablets: Telas entre 451px e 1024px */
+@media (min-width: 451px) and (max-width: 1024px) {
+    .eventSubscription {
+        flex-direction: column;
+        height: auto;
+        padding: 2em;
+    }
+
+    .disclaimer h2 {
+        font-size: 2.5em;
+    }
+
+    .subscriptionForm {
+        max-width: 50%;
+        padding: 1.5em;
+    }
+}
+
+/* Telas grandes (Smart TVs e superiores a 1920px) */
+@media (min-width: 1920px) {
+    .eventSubscription {
+        height: 95vh;
+        justify-content: space-around;
+    }
+
+    .disclaimer h2 {
+        font-size: 4em;
+    }
+
+    .disclaimer .aboutEvent {
+        font-size: 3em;
+        max-width: 450px;
+    }
+
+    .subscriptionForm {
+        max-width: 30%;
+        padding: 3em;
+    }
+}

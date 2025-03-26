@@ -1,0 +1,85 @@
+.keyBenefits h2 {
+    background-color: var(--secondary);
+    text-align: center;
+    padding: 2em;
+    font-weight: 500;
+}
+
+.benefits {
+    display: flex;
+    justify-content: space-around;
+    padding: 4em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.benefit {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 20%;
+    color: var(--text-tertiary);
+}
+
+.benefitImg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 1em;
+}
+
+/* Mobile: Telas menores (até 450px) */
+@media (max-width: 450px) {
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 100%;
+        margin-bottom: 2em;
+    }
+}
+
+/* Tablets: Telas entre 451px e 1024px */
+@media (min-width: 451px) and (max-width: 1024px) {
+    .benefits {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        padding: 2em;
+    }
+
+    .benefit {
+        max-width: 50%;
+        margin-bottom: 1.5em;
+    }
+
+    .benefitImg {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+/* Telas grandes (Smart TVs e superiores a 1920px) */
+@media (min-width: 1920px) {
+    .benefits {
+        justify-content: space-evenly;
+        padding: 6em;
+        width: 90%;
+    }
+
+    .benefit {
+        max-width: 25%;
+    }
+
+    .benefitImg {
+        width: 300px;
+        height: 300px;
+    }
+}
