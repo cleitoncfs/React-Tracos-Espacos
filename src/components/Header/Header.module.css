@@ -123,6 +123,14 @@
         font-size: 2.5em;
     }
 
+    .disclaimer .aboutEvent {
+        font-size: 2em;
+        line-height: 1.3; /* Ajuste de line-height */
+        max-width: 350px;
+        font-weight: bold;
+        margin-bottom: 1em;
+    }
+
     .subscriptionForm {
         max-width: 50%;
         padding: 1.5em;
