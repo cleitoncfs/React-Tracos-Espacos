@@ -11,7 +11,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: var(--text-color); /* Pode ser substituído por uma cor fixa */
+    color: var(--text-color);
 }
 
 /* Estilo do Título */
@@ -26,8 +26,8 @@
     width: 30%;
     font-weight: 600;
     font-size: 1.2em;
-    background-color: #00baf2; /* Cor do fundo */
-    color: #fff; /* Cor do texto */
+    background-color: #00baf2;
+    color: #fff;
     border: none;
     cursor: pointer;
     text-transform: uppercase;
